@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <partial name="Patials/_MenuSlider" />
+    <section class="section " id="cylinderBrand">
+        <partial name="Patials/_MainAd" />
+    </section>
+
+   @* <section class="section energyDifference-section bg-white" id="energyDifference">
+        <partial name="Patials/_EnergyDifference" />
+    </section>*@
+    <section class="section capacityTechnology-section bg-transparent capacitytech" id="capacityTechnology">
+        <partial name="Patials/_CapacityTechnology" />
+    </section>
+    <section class="section productsServices-section bg-transparent" id="productsServices">
+        <partial name="Patials/_ProductsServices" />
+    </section>
+   
+    <section class="section cylinderBrands-section bg-transparent" id="cylinderBrands">
+        <partial name="Patials/_CylinderBrands" />
+    </section>
+    
+
+</div>
+<style scoped>
+    section {
+   /* margin-top: 2em;
+    margin-bottom: 2em;*/
+    display: flex;
+    justify-content: center;
+}
+.main-body {
+    position: absolute;
+    overflow:auto;
+}
+/*.btn-danger {
+    width: 10em;
+    margin:auto;
+}*/
+.capacitytech {
+    background-image: url('/images/banners/image (3).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100% !important;
+    color: white;
+    height: 30em;
+}
+
+</style>

@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - surgeweb</title>
+       <link rel="preconnect" href="//db.onlinewebfonts.com" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/surgeweb.styles.css" asp-append-version="true" />
+    <link href="//db.onlinewebfonts.com/c/1c587cd97662ab09cb8ba96867f212e7?family=DINOT-Regular" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+      <strong>
+            
+        <nav class="navbar navbar-expand-lg  bg-white static-top" style="color:#243e81;">
+              
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/images/surge-energy.png" alt="..." height="60">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-circle-chevron-right"></i> Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-circle-chevron-right"></i> admin@surge.energy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-circle-chevron-right"></i> +254 711915374</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-danger" asp-area="" asp-controller="Home" asp-action="CallBackRequest"> Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary" asp-area="" asp-controller="Home" asp-action="RequestQuote" style="border-radius:2em;"> Request Quote</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg static-top" style="background-color:#243e81;color:white;">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menutoolbar" aria-controls="menutoolbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menutoolbar" style="justify-content: space-evenly;">
+                    <ul class="navbar-nav nav-fill nav-pills" style="width: 100%;font-size:1rem">
+                        <li class="nav-item">
+                            <a class="nav-link bg-transparent text-light" aria-current="page" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle bg-transparent text-light" href="#" id="navbarCompany" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                The Company
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="AboutUs">About us</a></li>
+                                @*<li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Company">What We Do</a></li>*@
+                            </ul>
+                        </li>
+                        @*<li class="nav-item">
+                        <a class="nav-link bg-transparent text-light" asp-area="" asp-controller="Home" asp-action="Company" aria-expanded="false">
+                        The Company
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Company">About Us</a></li>
+                        <li><a class="dropdown-item" href="#">Mission Vision</a></li>
+                        <li>
+                        <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Careers</a></li>
+                        </ul>
+                        </li>*@
+                        <li class="nav-item">
+                            <a class="nav-link bg-transparent text-light" asp-area="" asp-controller="Home" asp-action="Products" role="button" aria-expanded="false">
+                                Products &amp; Services
+                            </a>
+                        </li>
+                        @* <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Products &amp; Services
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Cylinder Manufacturing</a></li>Sustainability
+                        <li><a class="dropdown-item" href="#">Cylinder Refurbishment</a></li>
+                        </ul>
+                        </li>*@
+                        <li class="nav-item">
+                            <a class="nav-link bg-transparent text-light" asp-area="" asp-controller="Home" asp-action="Capacity" role="button" aria-expanded="false">
+                                Capacity &amp; Quality Assurance
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bg-transparent text-light" asp-area="" asp-controller="Home" asp-action="Sustainability" role="button" aria-expanded="false">
+                                Sustainability
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="form-group has-search" style="    margin-bottom: unset !important;">
+                                <span class="fa fa-search form-control-feedback"></span>
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        </strong>
+    </header>
+    <div style="margin-bottom: 5em;">
+
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class=" footer text-muted">
+        <partial name="Partials/_Footer" />
+        <div class="container">
+            &copy; 2022 - surgeweb - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+    <style>
+        /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    font-family:'DIN OT';
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+.nav-link {
+    color:black;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+    a .navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+.dropdown-item {
+    background-color: #fff;
+    color: #41464b;
+}
+
+.nav-link {
+    color: #243e81 ;
+    font-size:1em;
+}
+a {
+    color: #e9ecef;
+}
+.carousel img {
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 550px;
+    max-height: 550px;
+    width: auto;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
+    </style>
+</body>
+</html>

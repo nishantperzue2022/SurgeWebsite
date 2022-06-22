@@ -1,0 +1,42 @@
+﻿div {
+    margin: auto;
+}
+hr {
+    color: red;
+}
+.btn-danger {
+    border-radius: 2em !important;
+    width: 10em;
+    margin: auto;
+}
+.business-header {
+    height: 450px;
+    background-image: url(/gifs/SURGE-ENERGY-MAIN-ADVERT.webm);
+    object-fit: cover;
+    border-radius: 2em;
+    padding: 4rem;
+    /*background-image: url(/images/sections/CapacityQuality.png);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100% !important;
+    color: white;
+    /*height: 30em;*/
+}
+.video-wrapper {
+    /* Telling our absolute positioned video to 
+  be relative to this element */
+    background-image: url(/gifs/SURGE-ENERGY-MAIN-ADVERT.webm);
+    object-fit: cover;
+    border-radius: 2em;
+    padding: 4rem;
+    /*background-image: url(/images/sections/CapacityQuality.png);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100% !important;
+    color: white;
+    /*height: 30em;*
+}

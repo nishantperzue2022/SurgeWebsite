@@ -1,0 +1,199 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+ @*<div class="media-29101">
+            <a href="#"><img src="images/brands/hashi-energy.png" alt="Image" class="img-fluid"></a>
+        </div>*@
+<div class="container p-5">
+    <h1>Cylinder Brands</h1>
+    <hr />
+    <div class="owl-carousel owl-2">
+       
+        <div class="media-29101">
+            <a href="#"><img src="images/brands/Gas_Africa.png" alt="Image" class="img-fluid"></a>
+        </div>
+        <div class="media-29101">
+            <a href="#"><img src="images/brands/Ola.png" alt="Image" class="img-fluid"></a>
+        </div>
+        <div class="media-29101">
+            <a href="#"><img src="images/brands/Total.png" alt="Image" class="img-fluid"></a>
+        </div>
+        <!---->
+         <div class="media-29101">
+            <a href="#"><img src="images/brands/Hass.png" alt="Image" class="img-fluid"></a>
+        </div>
+        <div class="media-29101">
+            <a href="#"><img src="images/brands/Jaguar.png" alt="Image" class="img-fluid"></a>
+        </div>
+        <div class="media-29101">
+            <a href="#"><img src="images/brands/Mengas.png" alt="Image" class="img-fluid"></a>
+        </div>
+        <div class="media-29101">
+            <a href="#"><img src="images/brands/Meru_Lp_Gas.png" alt="Image" class="img-fluid"></a>
+        </div>
+         <!---->
+         <div class="media-29101">
+            <a href="#"><img src="images/brands/Mgas.png" alt="Image" class="img-fluid"></a>
+        </div>
+        <div class="media-29101">
+            <a href="#"><img src="images/brands/Rubis.png" alt="Image" class="img-fluid"></a>
+        </div>
+        <div class="media-29101">
+            <a href="#"><img src="images/brands/Seags.png" alt="Image" class="img-fluid"></a>
+        </div>
+        <div class="media-29101">
+            <a href="#"><img src="images/brands/Stabex.png" alt="Image" class="img-fluid"></a>
+        </div>
+         <!---->
+         <div class="media-29101">
+            <a href="#"><img src="images/brands/Taifa.png" alt="Image" class="img-fluid"></a>
+        </div>
+        <div class="media-29101">
+            <a href="#"><img src="images/brands/TopGas.png" alt="Image" class="img-fluid"></a>
+        </div>
+        <div class="media-29101">
+            <a href="#"><img src="images/brands/Vivo.png" alt="Image" class="img-fluid"></a>
+        </div>
+    </div>
+</div>
+<style scoped>
+    body {
+}
+
+hr {
+    color: red;
+}
+
+.btn-danger {
+    border-radius: 2em !important;
+    
+    margin: auto;
+}
+
+a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+    a, a:hover {
+        text-decoration: none !important;
+    }
+
+.content {
+    padding: 7rem 0;
+}
+
+.owl-nav {
+    display: none !important;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.bg-left-half {
+    position: relative;
+}
+
+    .bg-left-half:before {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        z-index: -1;
+        content: "";
+        left: 0;
+        top: 0;
+        background-color: #f8f9fa;
+    }
+
+.media-29101 img {
+    margin-bottom: 20px;
+}
+
+.media-29101 h3 {
+    font-size: 18px;
+    font-weight: 900 !important;
+}
+
+    .media-29101 h3 a {
+        color: #6c757d;
+    }
+
+.owl-2-style .owl-nav {
+    display: none;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: 8em;
+    object-fit: contain;
+}
+
+.owl-2-style .owl-dots {
+    text-align: center;
+    position: relative;
+    bottom: -30px;
+}
+
+    .owl-2-style .owl-dots .owl-dot {
+        display: inline-block;
+    }
+
+        .owl-2-style .owl-dots .owl-dot span {
+            display: inline-block;
+            width: 15px;
+            height: 3px;
+            border-radius: 0px;
+            background: #cccccc;
+            -webkit-transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
+            -o-transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
+            transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
+            margin: 3px;
+        }
+
+        .owl-2-style .owl-dots .owl-dot.active span {
+            background: #007bff;
+        }
+
+        .owl-2-style .owl-dots .owl-dot:active, .owl-2-style .owl-dots .owl-dot:focus {
+            outline: none;
+        }
+
+</style>
+<script>
+    $(function() {
+
+	if ( $('.owl-2').length > 0 ) {
+        $('.owl-2').owlCarousel({
+            center: false,
+            items: 1,
+            loop: true,
+            stagePadding: 0,
+            margin: 20,
+            smartSpeed: 1000,
+            autoplay: true,
+            nav: false,
+            dots: true,
+            pauseOnHover: false,
+            responsive:{
+                600:{
+                    margin: 20,
+                    nav:false,
+                  items: 3
+                },
+                1000:{
+                    margin: 20,
+                    stagePadding: 0,
+                    nav: false,
+                  items: 6
+                }
+            }
+        });            
+    }
+
+})
+</script>

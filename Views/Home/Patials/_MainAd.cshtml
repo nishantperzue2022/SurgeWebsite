@@ -1,0 +1,96 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="hero-area grid-acc shadow">
+    <div class="acc-grid ">
+
+        <div>
+            <a href="http://discovery.ariba.com/profile/AN11066036375" class="card shadow">
+
+                <img alt="View Surge Energy Limited profile on Ariba Discovery" border=0 src="/images/brands/AribaNetwork.png">
+
+            </a>
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <span class="acc-img d-flex justify-content-between"> Download Bronchure <img src="/images/brands/english.jpg" /></span>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <a href="/documents/Corporate_Credentials_Surge Energy.pdf" class="btn-outline-info" target="_blank">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed  d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="acc-img d-flex justify-content-between">Baixar Folheto <img src="/images/brands/Portugal.png" /></span>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                         <a href="/documents/Credenciais Corporativa _ Surge Energy.pt.pdf" class="btn-outline-info" target="_blank">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed  d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <span class="acc-img d-flex justify-content-between">Télécharger la brochure <img src="/images/brands/france.png" /></span>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                         <a href="/documents/Corporate_Credentials_Surge Energy.fr.pdf" class="btn-outline-info" target="_blank">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <div class="" style="margin-top:4em;margin-bottom:4em;text-align:center;">
+            @*<h1>How We Do It</h1>
+            <hr style="width: 20em;" />*@
+            <div class="container-iframe">
+                <iframe width="960" height="540" style="border-radius: 2em;"
+                        src="/videos/SURGE ENERGY MAIN ADVERT.mp4"
+                        frameborder="1" class="responsive-iframe"
+                        allowfullscreen></iframe>
+
+            </div>
+        </div>
+    </div>
+</div>
+<link src="_MainAd.cshtml.css" type="text/css" />
+<style>
+    .acc-grid {
+        max-width: 30em;
+        padding: 3rem;
+        margin: auto;
+    }
+
+    .acc-img img {
+        width: 10%
+    }
+
+    .container-iframe {
+        text-align: center;
+    }
+
+    .grid-acc {
+        width: 100%;
+        padding: 4rem;
+        margin:auto;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        /*//grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+    }
+    @@media (max-width: 600px) {
+  .grid-acc { grid-template-columns: repeat(1, 1fr); }
+}
+</style>
