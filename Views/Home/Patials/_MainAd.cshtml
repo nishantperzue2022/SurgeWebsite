@@ -1,20 +1,20 @@
-﻿@*
+﻿@*  hero-area grid-acc shadow   acc-grid
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
-<div class="hero-area grid-acc shadow">
-    <div class="acc-grid ">
+<div class=" row gulf">
+    <div class="col-md-4" style=" margin: auto;">
 
         <div>
             <a href="http://discovery.ariba.com/profile/AN11066036375" class="card shadow">
 
-                <img alt="View Surge Energy Limited profile on Ariba Discovery" border=0 src="/images/brands/AribaNetwork.png">
+                <img alt="View Surge Energy Limited profile on Ariba Discovery" border=0 src="/images/brands/AribaNetwork.png" style="height: 3rem; object-fit: cover;">
 
             </a>
         </div>
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
+        <div class="accordion " id="accordionExample">
+            <div class="accordion-item shadow">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <span class="acc-img d-flex justify-content-between"> Download Bronchure <img src="/images/brands/english.jpg" /></span>
@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item shadow">
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed  d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <span class="acc-img d-flex justify-content-between">Baixar Folheto <img src="/images/brands/Portugal.png" /></span>
@@ -34,11 +34,11 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                         <a href="/documents/Credenciais Corporativa _ Surge Energy.pt.pdf" class="btn-outline-info" target="_blank">Download</a>
+                        <a href="/documents/Credenciais Corporativa _ Surge Energy.pt.pdf" class="btn-outline-info" target="_blank">Download</a>
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item shadow">
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed  d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         <span class="acc-img d-flex justify-content-between">Télécharger la brochure <img src="/images/brands/france.png" /></span>
@@ -46,18 +46,18 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                         <a href="/documents/Corporate_Credentials_Surge Energy.fr.pdf" class="btn-outline-info" target="_blank">Télécharger</a>
+                        <a href="/documents/Corporate_Credentials_Surge Energy.fr.pdf" class="btn-outline-info" target="_blank">Télécharger</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="">
+    <div class="col-md-8">
         <div class="" style="margin-top:4em;margin-bottom:4em;text-align:center;">
-            @*<h1>How We Do It</h1>
-            <hr style="width: 20em;" />*@
+            @*<h1>How We Do It</h1>width="960" height="540"
+                <hr style="width: 20em;" />*@
             <div class="container-iframe">
-                <iframe width="960" height="540" style="border-radius: 2em;"
+                <iframe style="border-radius: 2em;"
                         src="/videos/SURGE ENERGY MAIN ADVERT.mp4"
                         frameborder="1" class="responsive-iframe"
                         allowfullscreen></iframe>
@@ -79,18 +79,45 @@
     }
 
     .container-iframe {
-        text-align: center;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+    }
+
+    .accordion-item {
+        border: unset;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
     }
 
     .grid-acc {
         width: 100%;
         padding: 4rem;
-        margin:auto;
-        display: grid;
-        grid-template-columns: auto 1fr;
-        /*//grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+        margin: auto;
+        /* display: grid;
+           grid-template-columns: auto 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
     }
-    @@media (max-width: 600px) {
-  .grid-acc { grid-template-columns: repeat(1, 1fr); }
-}
+    /*  @@media (max-width: 1200px) {
+      .grid-acc { grid-template-columns: repeat(1, 1fr); }
+    }*/
+
+    /*  iframe {
+            width: 100%;
+            height:100%;
+            max-width: 960px;
+            max-height: 540px;
+        }*/
 </style>
