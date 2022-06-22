@@ -4,11 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - surgeweb</title>
-    <link rel="preconnect" href="//db.onlinewebfonts.com" />
+    @*<link rel="preconnect" href="//db.onlinewebfonts.com" />*@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/surgeweb.styles.css" asp-append-version="true" />
-    <link href="//db.onlinewebfonts.com/c/1c587cd97662ab09cb8ba96867f212e7?family=DINOT-Regular" rel="stylesheet" type="text/css" />
+    
+
+    @*<link href="//db.onlinewebfonts.com/c/1c587cd97662ab09cb8ba96867f212e7?family=DINOT-Regular" rel="stylesheet" type="text/css" />*@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -137,13 +139,16 @@
     </footer>
    
     @await RenderSectionAsync("Scripts", required: false)
-    <style>
+<style>
         /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 body {
     font-family:'DIN OT';
 }
-
+    @@font-face {
+        font-family: 'DINOT';
+        src: url('/fonts/Dinot Font.otf');
+    }
 .has-search .form-control {
     padding-left: 2.375rem;
 }
@@ -223,6 +228,6 @@ button.accept-policy {
   line-height: 60px;
 }
 
-    </style>
+</style>
 </body>
 </html>
