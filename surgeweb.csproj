@@ -5,10 +5,11 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>preview</LangVersion>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Views\Home\Certifications.cshtml" />
+    <Content Remove="Views\Home\Certificdations.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,15 +25,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <UpToDateCheckInput Remove="Views\Home\Certifications.cshtml" />
+    <Content Include="favicon.ico" />
   </ItemGroup>
 
   <ItemGroup>
-    <_ContentIncludedByDefault Remove="Views\Home\Certifications.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Views\Home\Certifications.cshtml" />
+    <None Include="Views\Home\Certificdations.cshtml" />
   </ItemGroup>
 
 </Project>

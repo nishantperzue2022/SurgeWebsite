@@ -101,7 +101,7 @@ namespace surgeweb.Services
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                throw ex;
             }
         }
     }
