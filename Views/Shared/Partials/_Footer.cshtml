@@ -18,7 +18,7 @@
 
             <div class="row">
 
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <h3>Contact Us</h3>
                     <ul class="list-unstyled links">
                         <li><a href="#" class="location"><i class="fa-solid fa-location-dot"></i> The Arch Place | 1<sup>st</sup>Floor | Nyangumi Road</a></li>
@@ -35,27 +35,28 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <h3>The Company</h3>
                     <ul class="list-unstyled links">
-                        <li><a href="#"><i class="fa-solid fa-check"></i> About Us</a></li>
-                        <li><a href="#"><i class="fa-solid fa-check"></i> What we do</a></li>
+
+                        <li><a asp-area="" asp-controller="Home" asp-action="AboutUs"><i class="fa-solid fa-check" ></i> About Us</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Products"><i class="fa-solid fa-check"></i> What we do</a></li>
                         <li><a href="#"><i class="fa-solid fa-check"></i> Our Team</a></li>
                         <li><a href="#"><i class="fa-solid fa-check"></i> News</a></li>
                     </ul>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6 col-md-4 col-sm-12 ">
                     <h3>Quick Links</h3>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
                             <ul class="list-unstyled links">
-                                <li><a href="#"><i class="fa-solid fa-check"></i>Products &amp; Services</a></li>
-                                <li><a href="#"><i class="fa-solid fa-check"></i> The Factory</a></li>
-                                <li><a href="#"><i class="fa-solid fa-check"></i> Quality Assurance &amp; Control</a></li>
-                                <li><a href="#"><i class="fa-solid fa-check"></i> Environmental Sustainability</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Products"><i class="fa-solid fa-check"></i>Products &amp; Services</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="AboutUs"><i class="fa-solid fa-check"></i> The Factory</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Capacity"><i class="fa-solid fa-check"></i> Quality Assurance &amp; Control</a></li>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Sustainability"><i class="fa-solid fa-check"></i> Environmental Sustainability</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
                             <ul class="list-unstyled links">
                                 <li><a href="#"><i class="fa-solid fa-check"></i> Careers</a></li>
                                 <li><a href="#"><i class="fa-solid fa-check"></i> Feedback</a></li>
@@ -76,7 +77,7 @@
 </footer>
 <style scoped>
 
-
+/*
 
     body {
         font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -85,7 +86,7 @@
     h1, h2, h3, h4, h5, h6,
     .h1, .h2, .h3, .h4, .h5, .h6 {
         font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    }
+    }*/
 
     a {
         -webkit-transition: .3s all ease;
@@ -117,9 +118,9 @@
         height: 50vh;
     }
 
-    h3 {
+   /* h3 {
         border-bottom: 1px solid red;
-    }
+    }*/
 
     .icon-facebook::before {
         font-family: 'Font Awesome 5 Brands';
@@ -180,7 +181,14 @@
         }
 
     .btn-outline-danger {
-        border-radius: 2em;
+        border-radius: 0.9em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    }
+    .btn-outline-primary {
+        border-radius: 0.9em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     }
 
         .btn-outline-danger:hover {
