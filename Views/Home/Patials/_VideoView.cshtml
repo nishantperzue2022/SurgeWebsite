@@ -17,7 +17,7 @@
 
                 <h1 class="tagline">Surge Energy</h1>
                 <hr>
-                <p>
+                <p style="text-align: justify;">
                     Surge Energy Limited (Surge),
                     is a Kenyan LPG cylinder manufacturing and revalidation firm incorporated in 2017 and located in Kisaju, Kenya.
                     The location gives easy access by road, rail and air to Kenya’s Capital City (Nairobi),
@@ -38,33 +38,34 @@
         </div>
         <div class="video-wrapper col-md-6">
             <video loop>
-                <source src="/gifs/SURGE-ENERGY-MAIN-ADVERT.webm" type="video/webm">
+                <source src="~/gifs/SURGE-ENERGY-MAIN-ADVERT.webm" type="video/webm">
             </video>
         </div>
     </div>
 </div>
-<section>
-    <div class="container text-center" style="padding: 5rem;">
+<section class="container text-center">
+   @* <div class="container text-center card shadow" style="padding: 5rem;">
     <h1>Our Vission</h1>
     <hr />
     <h5 class="mbr-fonts-style text1 mbr-text display-6">
                         To exceed our clients' expectations in quality,
                         delivery, and cost through continuous interaction with customers.
-                    </h5></div>
+                    </h5></div>*@
 
     <div class="grid">
-      @*  <article>
+        <article>
             <div class="wrap">
                 
                 <div class="text-wrap vcenter">
-                    <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Our <span>Vission</span></h2>
+                    <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Our Vission</h2>
+                    <hr />
                     <p class="mbr-fonts-style text1 mbr-text display-6">
                         To exceed our clients' expectations in quality,
                         delivery, and cost through continuous interaction with customers.
                     </p>
                 </div>
             </div>
-        </article>*@
+        </article>
         <article>
             <div class="wrap">
                 <div class="ico-wrap">
@@ -74,6 +75,7 @@
                     <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">
                         <span>Our Mission</span>
                     </h2>
+                    <hr />
                     <p class="mbr-fonts-style text1 mbr-text display-6">
                         To become the global benchmark manufacturing
                         company for the L.P.G industry providing cutting edge products that exceed the highest set
@@ -93,6 +95,7 @@
 
                         <span>Our Driving Force</span>
                     </h2>
+                    <hr />
                     <p class="mbr-fonts-style text1 mbr-text display-6">
                         We are a client & quality-centric firm that is driven by passion and aims at
                         delivering beyond the client’s expectations in quality, safety, on-time delivery,
@@ -114,6 +117,7 @@
                     <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">
                         <span>What We Stand For</span>
                     </h2>
+                    <hr />
                     <p class="mbr-fonts-style text1 mbr-text display-6">
                         We stand for quality, safety, consistency, accuracy, timeliness, innovation, affordability and
                         accessibility of our products and services. This is all made possible due to high levels of teamwork
@@ -139,8 +143,8 @@
     }
 
         .grid > article {
-            border: 1px solid #ccc;
-            box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+            /*border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);*/
         }
 
             .grid > article img {
@@ -212,7 +216,7 @@
         background: white;
         padding: 1rem 1rem 1rem 1rem;
         border-radius: 0.5rem;
-        box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);
+       /* box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);*/
         margin-bottom: 2rem;
         min-height: 15em;
     }
@@ -235,6 +239,8 @@
 
     .vcenter {
         margin: auto;
+        margin-top: 0.5em;
+        text-align: left;
     }
 
     .mbr-section-title3 {
