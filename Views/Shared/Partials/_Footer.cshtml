@@ -3,54 +3,57 @@
         <div class="f-container">
 
             <div class="cta d-flex justify-content-between">
-                <div>
-                    <h4 class="f-text">Inquiries / Queries?</h4>
-                </div>
-                <div class="ml-auto"><strong>
-                    
+
+                <h4 class="f-text">Inquiries / Queries?</h4>
+
+                <div class="ml-auto">
+
                     <a class="btn btn-light f-button" asp-area="" asp-controller="Home" asp-action="CallBackRequest" style="
     margin: 1em !important;
     border-radius: 1em !important;
-">Get In Touch</a>
-                </strong>
+"><strong>Get In Touch </strong></a>
+
                 </div>
             </div>
 
 
 
-            <div class="row">
+            <div class="footer-body">
 
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <h3>Contact Us</h3>
+                <div class="">
+                    <h4>Contact Us</h4>
+                    <hr />
                     <ul class="list-unstyled links">
                         <li><a href="#" class="location"><i class="fa-solid fa-location-dot"></i> The Arch Place | 1<sup>st</sup>Floor | Nyangumi Road</a></li>
                         <li><a href="#" class="post"><i class="fa-solid fa-envelope"></i> P.O Box 3421-00506 Nairobi | Kenya</a></li>
                         <li><a href="#" class="phone"><i class="fa-solid fa-phone"></i> +254 711915374</a></li>
-                        <li><a href="#" class="infomail"><i class="fa-solid fa-envelope-dot"></i> admin@surge.energy</a></li>
+                        <li><a href="#" class="infomail"><i class="fa fa-paper-plane"></i> admin@surge.energy</a></li>
                         <li>
                             <ul class="list-unstyled social">
-                                <li><a class="btn btn-outline-danger" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a class="btn btn-outline-danger" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                <li><a class="btn btn-outline-danger" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                <li><a class="btn btn-outline-danger" href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
+                                <li><a class="" href="https://web.facebook.com/Rayhan.Badsha13/?_rdc=1&_rdr"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a class="" href="https://twitter.com/surgeenergya?lang=en"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a class="" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a class="" href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <h3>The Company</h3>
+                <div class="">
+                    <h4>The Company</h4>
+                    <hr />
                     <ul class="list-unstyled links">
 
-                        <li><a asp-area="" asp-controller="Home" asp-action="AboutUs"><i class="fa-solid fa-check" ></i> About Us</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="AboutUs"><i class="fa-solid fa-check"></i> About Us</a></li>
                         <li><a asp-area="" asp-controller="Home" asp-action="Products"><i class="fa-solid fa-check"></i> What we do</a></li>
                         <li><a href="#"><i class="fa-solid fa-check"></i> Our Team</a></li>
                         <li><a href="#"><i class="fa-solid fa-check"></i> News</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-6 col-md-4 col-sm-12 ">
-                    <h3>Quick Links</h3>
+                <div class="">
+                    <h4>Quick Links</h4>
+                    <hr />
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-md-6">
                             <ul class="list-unstyled links">
                                 <li><a asp-area="" asp-controller="Home" asp-action="Products"><i class="fa-solid fa-check"></i>Products &amp; Services</a></li>
                                 <li><a asp-area="" asp-controller="Home" asp-action="AboutUs"><i class="fa-solid fa-check"></i> The Factory</a></li>
@@ -58,7 +61,7 @@
                                 <li><a asp-area="" asp-controller="Home" asp-action="Sustainability"><i class="fa-solid fa-check"></i> Environmental Sustainability</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-md-6">
                             <ul class="list-unstyled links">
                                 <li><a href="#"><i class="fa-solid fa-check"></i> Careers</a></li>
                                 <li><a href="#"><i class="fa-solid fa-check"></i> Feedback</a></li>
@@ -78,19 +81,26 @@
     </div>
 </footer>
 <style scoped>
-
-/*
-
-    body {
-        font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    .footer-body {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr minmax(30em, 1fr);
+        grid-gap: 1rem;
     }
 
-    h1, h2, h3, h4, h5, h6,
-    .h1, .h2, .h3, .h4, .h5, .h6 {
-        font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    }*/
+    @@media screen and (max-width: 992px) {
+        .footer-body {
+            display: grid;
+            grid-template-rows: 2fr;
+            grid-template-columns: repeat(auto 1fr);
+            grid-gap: 1rem;
+        }
+    }
+     .social  li i {
+        color: WHITE !important;
+    }
 
-    a {
+   .footer-20192 a {
         -webkit-transition: .3s all ease;
         -o-transition: .3s all ease;
         transition: .3s all ease;
@@ -116,20 +126,20 @@
         width: 10rem;
     }
 
-    .content {
+    .footer-20192 .content {
         height: 50vh;
     }
 
-   /* h3 {
-        border-bottom: 1px solid red;
-    }*/
+    /* h3 {
+                        border-bottom: 1px solid red;
+                    }*/
 
     .icon-facebook::before {
         font-family: 'Font Awesome 5 Brands';
         content: '\f09a';
     }
 
-    li i {
+   .footer-20192 li i {
         color: red;
     }
 
@@ -184,24 +194,25 @@
 
     .btn-outline-danger {
         border-radius: 0.9em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    }
-    .btn-outline-primary {
-        border-radius: 0.9em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
     }
 
-        .btn-outline-danger:hover {
-            color: white;
-            background-color: #243e81;
-            border-color: #ffffff;
-        }
+    .btn-outline-primary {
+        border-radius: 0.9em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    .btn-outline-danger:hover {
+        color: white;
+        background-color: #243e81;
+        border-color: #ffffff;
+    }
 
     .footer-20192 .cta {
         /* -webkit-box-shadow: -20px -20px 0 0 rgba(52, 58, 64, 0.2);
-                    box-shadow: -20px -20px 0 0 rgba(52, 58, 64, 0.2);*/
+                                    box-shadow: -20px -20px 0 0 rgba(52, 58, 64, 0.2);*/
         background-color: #bd2130;
         top: -2.5em;
         border-radius: 2em;
@@ -218,7 +229,7 @@
             font-size: 1em;
         }
 
-    a {
+   .footer-20192 a {
         border-radius: 2em;
     }
 

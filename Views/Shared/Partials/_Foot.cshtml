@@ -1,0 +1,82 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="footer">
+    <div class="cta d-flex justify-content-between">
+
+        <h4 class="f-text">Inquiries / Queries?</h4>
+
+        <div class="ml-auto">
+
+            <a class="btn btn-light f-button" asp-area="" asp-controller="Home" asp-action="CallBackRequest" style="
+    margin: 1em !important;
+    border-radius: 1em !important;
+"><strong>Get In Touch </strong></a>
+
+        </div>
+    </div>
+
+
+    <div class="footer-body">
+
+        <div class="">
+            <h3>Contact Us</h3>
+            <ul class="list-unstyled links">
+                <li><a href="#" class="location"><i class="fa-solid fa-location-dot"></i> The Arch Place | 1<sup>st</sup>Floor | Nyangumi Road</a></li>
+                <li><a href="#" class="post"><i class="fa-solid fa-envelope"></i> P.O Box 3421-00506 Nairobi | Kenya</a></li>
+                <li><a href="#" class="phone"><i class="fa-solid fa-phone"></i> +254 711915374</a></li>
+                <li><a href="#" class="infomail"><i class="fa-solid fa-envelope-dot"></i> admin@surge.energy</a></li>
+                <li>
+                    <ul class="list-unstyled social">
+                        <li><a class="btn btn-outline-danger" href="https://web.facebook.com/Rayhan.Badsha13/?_rdc=1&_rdr"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="btn btn-outline-danger" href="https://twitter.com/surgeenergya?lang=en"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a class="btn btn-outline-danger" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a class="btn btn-outline-danger" href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="">
+            <h3>The Company</h3>
+            <ul class="list-unstyled links">
+
+                <li><a asp-area="" asp-controller="Home" asp-action="AboutUs"><i class="fa-solid fa-check"></i> About Us</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Products"><i class="fa-solid fa-check"></i> What we do</a></li>
+                <li><a href="#"><i class="fa-solid fa-check"></i> Our Team</a></li>
+                <li><a href="#"><i class="fa-solid fa-check"></i> News</a></li>
+            </ul>
+        </div>
+        <div class="">
+            <h3>Quick Links</h3>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <ul class="list-unstyled links">
+                        <li><a asp-area="" asp-controller="Home" asp-action="Products"><i class="fa-solid fa-check"></i>Products &amp; Services</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="AboutUs"><i class="fa-solid fa-check"></i> The Factory</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Capacity"><i class="fa-solid fa-check"></i> Quality Assurance &amp; Control</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Sustainability"><i class="fa-solid fa-check"></i> Environmental Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <ul class="list-unstyled links">
+                        <li><a href="#"><i class="fa-solid fa-check"></i> Careers</a></li>
+                        <li><a href="#"><i class="fa-solid fa-check"></i> Feedback</a></li>
+                        <li><a href="#"><i class="fa-solid fa-check"></i> Contact Us</a></li>
+                        <li><a href="#"><i class="fa-solid fa-check"></i> Virtual Tour</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<style>
+    .footer-body {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 400px 1fr minmax(30em, 40em);
+        background-color: #3d7f99;
+    }
+</style>

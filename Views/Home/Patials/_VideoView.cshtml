@@ -19,7 +19,7 @@
                 <hr>
                 <p style="text-align: justify;">
                     Surge Energy Limited (Surge),
-                    is a Kenyan LPG cylinder manufacturing and revalidation firm incorporated in 2017 and located in Kisaju, Kenya.
+                    is a Kenyan LPG cylinder manufacturing and revalidation company incorporated in 2017 and located in Kisaju, Kenya.
                     The location gives easy access by road, rail and air to Kenya’s Capital City (Nairobi),
                     the Mombasa Port through Internal Container Depot (ICD), and the East Africa Region.
                     The Twenty-Eight (28) Million USD worth of investment is a fully installed automatic ultramodern LPG
@@ -37,13 +37,13 @@
             </div>
         </div>
         <div class="video-wrapper col-md-6">
-            <video loop>
-                <source src="~/gifs/SURGE-ENERGY-MAIN-ADVERT.webm" type="video/webm">
+            <video loop autoplay>
+                <source src="/gifs/SURGE-ENERGY-MAIN-ADVERT.webm" type="video/webm">
             </video>
         </div>
     </div>
 </div>
-<section class="container text-center">
+<section class="container text-center ">
    @* <div class="container text-center card shadow" style="padding: 5rem;">
     <h1>Our Vission</h1>
     <hr />
@@ -52,7 +52,7 @@
                         delivery, and cost through continuous interaction with customers.
                     </h5></div>*@
 
-    <div class="grid">
+    <div class="grid ">
         <article>
             <div class="wrap">
                 
@@ -136,7 +136,7 @@
 <style scoped>
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(30em, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
         grid-gap: 1rem;
         align-items: stretch;
         padding: 4rem;
@@ -177,7 +177,7 @@
 
     video {
         position: absolute;
-        height: 31.5em;
+        height: -webkit-fill-available;
         width: 100%;
         object-fit: cover;
     }
@@ -277,4 +277,14 @@
         font-family: 'Source Sans Pro',sans-serif;
         font-size: 1rem;
     }
+    @@media (max-width: 1200px){
+        .col-md-6 {
+            flex: 0 0 100%;
+    max-width: 100%;
+        }
+        .video-wrapper {
+            display:none;
+        }
+    }
+   
 </style>
