@@ -84,7 +84,7 @@ namespace surgeweb.Services
                 StreamReader str = new StreamReader(FilePath);
                 string MailText = str.ReadToEnd();
                 str.Close();
-                MailText = MailText.Replace("[Name]", mailRequest.Name).Replace("[Email]", mailRequest.ToEmail).Replace("[PhoneNumber]", mailRequest.PhoneNumber).Replace("[body]", mailRequest.Body);
+                MailText = MailText.Replace("[Name]", mailRequest.Name).Replace("[Email]", mailRequest.ToEmail).Replace("[PhoneNumber]", mailRequest.PhoneNumber).Replace("[body]", mailRequest.Body).Replace("[productType]", mailRequest.ProductType);
                 var email = new MimeMessage();
                 email.Sender = MailboxAddress.Parse(_mailSettings.Mail);
                 email.To.Add(MailboxAddress.Parse(_mailAddresses.InfoMail));

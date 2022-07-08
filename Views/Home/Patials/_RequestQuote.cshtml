@@ -1,76 +1,86 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
-@{
+
 }
 
 <div class="container px-1 py-5 mx-auto">
 
-    <form asp-method="post" asp-area="" asp-controller="Home" asp-action="PostRequest">
-        <div class="form-group row">
-            <label for="Name" class="col-4 col-form-label">Your Name</label>
-            <div class="col-8">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <i class="fa fa-address-card"></i>
-                        </div>
+    <form asp-method="post" asp-area="" asp-controller="Home" asp-action="PostRequest" class="formz">
+
+        <div class="form-group">
+            <label for="Name">Your Name</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <i class="fa fa-address-card"></i>
                     </div>
-                    <input id="Name" name="Name" type="text" class="form-control" required="required">
                 </div>
+                <input id="Name" name="Name" type="text" required="required" class="form-control">
             </div>
         </div>
-        <div class="form-group row">
-            <label for="Email" class="col-4 col-form-label">Email Address</label>
-            <div class="col-8">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <i class="fa fa-envelope"></i>
-                        </div>
+        <div class="form-group">
+            <label for="ToEmail">Email Address</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <i class="fa fa-envelope"></i>
                     </div>
-                    <input id="Email" name="ToEmail" type="text" class="form-control" required="required">
                 </div>
+                <input id="ToEmail" name="ToEmail" type="text" required="required" class="form-control">
             </div>
         </div>
-        <div class="form-group row">
-            <label for="PhoneNumber" class="col-4 col-form-label">Mobile Number</label>
-            <div class="col-8">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <i class="fa fa-phone-square"></i>
-                        </div>
+        <div class="form-group">
+            <label for="PhoneNumber">Mobile Number</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <i class="fa fa-phone-square"></i>
                     </div>
-                    <input id="PhoneNumber" name="PhoneNumber" type="text" class="form-control" required="required">
                 </div>
+                <input id="PhoneNumber" name="PhoneNumber" type="text" required="required" class="form-control">
             </div>
         </div>
-        <div class="form-group row">
-            <label for="type" class="col-4 col-form-label">Product Type</label>
-            <div class="col-8">
-                <select id="type" name="type" class="custom-select" required="required">
+        <div class="form-group">
+            <label for="ProductType">Product Type</label>
+            <div>
+                <select id="ProductType" name="ProductType" class="custom-select" required="required">
                     <option value=""></option>
                     <option value="Commercial">Commercial</option>
                     <option value="Domestic">Domestic</option>
                 </select>
             </div>
         </div>
-        <div class="form-group row">
-            <label for="message" class="col-4 col-form-label">Message</label>
-            <div class="col-8">
-                <textarea id="message" name="Body" cols="40" rows="5" class="form-control" required="required"></textarea>
-            </div>
+        <div class="form-group">
+            <label for="Body">Message</label>
+            <textarea id="Body" name="Body" cols="40" rows="5" required="required" class="form-control"></textarea>
         </div>
-        <div class="form-group row">
-            <div class="offset-4 col-8">
-                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
-            </div>
+        <div class="form-group">
+            <button name="submit" type="submit" class="btn btn-primary submit">Submit</button>
         </div>
     </form>
 </div>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+@*
 <script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>*@
+<style>
+    .formz {
+                width: 50rem;
+        margin: auto;
+        }
+         textarea.form-control {
+            height: 10em;
+            /* margin-top: px;*/
+        }
+
+        .submit {
+            font-size: 1.1em;
+            float: right;
+            margin: 1em;
+            width: 10em;
+            background-color: #243e81;
+            color: #ffffff;
+        }
+</style>

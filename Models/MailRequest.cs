@@ -16,6 +16,7 @@
         public string Body { get; set; }
         public string PhoneNumber { get; set; }
         public string Name { get; set; }
+        public string ProductType { get; set; }
         public List<IFormFile> Attachments { get; set; }
     }
 }

@@ -1,10 +1,7 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-<!------ Include the above in your HEAD tag ---------->
+﻿
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 <section id="contact">
@@ -14,97 +11,88 @@
     </div>
     <div class="contact-section">
         <div class="container">
-            <form asp-method="post" asp-area="" asp-controller="Home" asp-action="SendMail">
-                <div class="row">
-                    <div  class="col-md-6 form-line">
-                        <div  class="form-group">
-                            <label  for="exampleInputUsername">Your name</label>
-                            <input name="Name"  type="text" class="form-control" id="" placeholder=" Enter Name">
-                        </div>
-                        <div  class="form-group">
-                            <label  for="exampleInputEmail">Email Address</label>
-                            <input name="ToEmail" type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
-                        </div>
-                        <div  class="form-group">
-                            <label  for="telephone">Mobile No.</label>
-                            <input name="PhoneNumber"  type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
-                        </div>
-                    </div>
-                    <div  class="col-md-6">
-                        <div  class="form-group">
-                            <label  for="description"> Message</label>
-                            <textarea name="Body" class="form-control" id="description" placeholder="Enter Your Message"></textarea>
-                        </div>
-                        <div >
+            <form asp-method="post" asp-area="" asp-controller="Home" asp-action="SendMail" class="formz">
 
-                            <button  type="submit" class="btn btn-primary submit"><i  class="fa fa-paper-plane" aria-hidden="true"></i>  Send Request</button>
-                        </div>
 
+                <div class="form-group">
+                    <label for="Name">Your Name</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fa fa-address-card"></i>
+                            </div>
+                        </div>
+                        <input id="Name" name="Name" type="text" required="required" class="form-control">
                     </div>
                 </div>
+                <div class="form-group">
+                    <label for="ToEmail">Email Address</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                        </div>
+                        <input id="ToEmail" name="ToEmail" type="text" required="required" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="PhoneNumber">Mobile Number</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fa fa-phone-square"></i>
+                            </div>
+                        </div>
+                        <input id="PhoneNumber" name="PhoneNumber" type="text" required="required" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Body">Message</label>
+                    <textarea id="Body" name="Body" cols="40" rows="5" required="required" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <button name="submit" type="submit" class="btn btn-primary submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Submit</button>
+                </div>
+
+
 
             </form>
         </div>
     </div>
 </section>
 <style>
-    /*Contact sectiom*/
-.content-header {
-    /*font-family: 'Oleo Script', cursive;*/
-    color: #bd2130;
-    font-size: 45px;
-}
+      .content-header {
+          color: #bd2130;
+          font-size: 45px;
+      }
 
-.section-content {
-    text-align: center;
-}
+    .section-content {
+          text-align: center;
+      }
+      .formz {
+              width: 50rem;
+      margin: auto;
+      }
+      #contact {
+          padding: 4rem;
+          width: 100%;
+          width: 99vw;
+          height: 80vh;
+          color: #000000;
+      }
 
-#contact {
-    /*font-family: 'Teko', sans-serif;*/
-    padding-top: 60px;
-    width: 100%;
-    width: 100vw;
-    height: 550px;
-    /*background: #3a6186;  fallback for old browsers */
-    /*background: -webkit-linear-gradient(to left, #3a6186, #89253e);  Chrome 10-25, Safari 5.1-6 */
-    /*background: linear-gradient(to left, #3a6186, #89253e);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #000000;
-}
+      textarea.form-control {
+          height: 10em;
+      }
 
-.contact-section {
-    padding-top: 40px;
-}
-
-    .contact-section .col-md-6 {
-        width: 50%;
-    }
-
-
-
-
-label {
-    font-size: 1.3em;
-    line-height: 1em;
-    font-weight: normal;
-}
-
-.form-control {
-    font-size: 1.3em;
-    color: #080808;
-}
-
-textarea.form-control {
-    height: 135px;
-    /* margin-top: px;*/
-}
-
-.submit {
-    font-size: 1.1em;
-    float: right;
-    margin: 1em;
-    width: 10em;
-    background-color: #243e81;
-    color: #ffffff;
-}
+      .submit {
+          font-size: 1.1em;
+          float: right;
+          margin: 1em;
+          width: 10em;
+          background-color: #243e81;
+          color: #ffffff;
+      }
 
 </style>
