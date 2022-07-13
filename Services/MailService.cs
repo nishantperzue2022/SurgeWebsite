@@ -80,7 +80,7 @@ namespace surgeweb.Services
         {
             try
             {
-                string FilePath = Directory.GetCurrentDirectory() + "\\wwwroot\\EmailTemplates\\RequestCallBack.html";
+                string FilePath = Directory.GetCurrentDirectory() + "\\wwwroot\\EmailTemplates\\RequestQuote.html";
                 StreamReader str = new StreamReader(FilePath);
                 string MailText = str.ReadToEnd();
                 str.Close();
